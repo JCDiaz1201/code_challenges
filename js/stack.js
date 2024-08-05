@@ -46,11 +46,23 @@ stck.push("value 1")
 stck.push("value 2")
 stck.push("value 3")
 
-console.log(stck.first)
-console.log(stck.last)
-console.log(stck.size)
+console.log(stck.first) /*
+        Node {
+        value: 'value3',
+        next: Node { value: 'value2', next: Node { value: 'value1', next: null } }
+        }
+    */
+console.log(stck.last) // Node { value: 'value1', next: null }
+console.log(stck.size) // 3
 
 stck.push("value 4")
 console.log(stck.first)
 console.log(stck.pop())
 console.log(stck.last)
+
+console.log(stck.first)
+console.log(stck.last)
+console.log(stck.size)
+
+stck.push("value4")
+console.log(stck.pop()) // value4
